@@ -4,7 +4,7 @@ import time
 delay = 0.15
 
 pencere = turtle.Screen()
-pencere.title('Yılan Oyunu')
+pencere.title('Snake Game')
 pencere.bgcolor('lightgreen')
 pencere.setup(width=600, height=600)
 pencere.tracer(0)
@@ -35,7 +35,7 @@ yaz.color("white")
 yaz.penup()
 yaz.hideturtle()
 yaz.goto(0, 260)
-yaz.write("Puan: {}".format(puan), align="center", font=("Courier", 24, "normal"))
+yaz.write("Skor: {}".format(puan), align="center", font=("Courier", 24, "normal"))
 
 def move():
     if kafa.direction == "up":
@@ -133,7 +133,7 @@ while True:
             kuyruklar = []
             puan = 0
             yaz.clear()
-            yaz.write('Puan: {}'.format(puan), align='center', font=('Courier', 24, 'normal'))
+            yaz.write('Skor: {}'.format(puan), align='center', font=('Courier', 24, 'normal'))
             hiz = 0.15
 
     time.sleep(delay)
